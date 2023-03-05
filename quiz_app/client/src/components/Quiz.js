@@ -1,5 +1,31 @@
 import React from "react";
 
 export default function Quiz() {
-  return <div>Quiz</div>;
+  /* next button event handler */
+  function onNext() {
+    console.log("On next Click");
+  }
+
+  /* prev button event handler */
+  function onPrev() {
+    console.log("On onPrev Click");
+  }
+
+  return (
+    <div className="container">
+      <h1 className="title text-light">Quiz Applicaton</h1>
+
+      {/* display questions */}
+
+      <div className="grid">
+        <button className="btn prev" onClick={onPrev}>
+          Prev
+        </button>
+        <button className="btn next" onClick={onNext}>
+          Next
+        </button>
+      </div>
+    </div>
+  );
 }
+//Questions ... continue from 21:38 minutes
