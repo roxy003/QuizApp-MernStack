@@ -1,5 +1,5 @@
 import React from "react";
-
+import Questions from "./Questions";
 export default function Quiz() {
   /* next button event handler */
   function onNext() {
@@ -14,8 +14,8 @@ export default function Quiz() {
   return (
     <div className="container">
       <h1 className="title text-light">Quiz Applicaton</h1>
-
       {/* display questions */}
+      <Questions />
 
       <div className="grid">
         <button className="btn prev" onClick={onPrev}>
@@ -28,4 +28,3 @@ export default function Quiz() {
     </div>
   );
 }
-//Questions ... continue from 21:38 minutes
